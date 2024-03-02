@@ -1,0 +1,23 @@
+{% extends 'courses/base.html' %}
+
+{% load static %}
+
+{%block title %}404 page not found{% endblock %}
+
+{% block links %}
+<link type="text/css" href="{% static 'courses/css/error.css' %}" rel="stylesheet"/>
+
+{% endblock %}
+
+{% block body %}
+<h1>404</h1>
+<div class="cloak__wrapper">
+  <div class="cloak__container">
+    <div class="cloak"></div>
+  </div>
+</div>
+<div class="info">
+  <h2>Страница не найдена</h2>
+  <p>Скорее всего страница сбежала от нас. Просим прощения, что не успели её догнать.</p><a href="{ url ''}">Home</a>
+</div>
+{% endblock %}

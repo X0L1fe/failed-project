@@ -1,0 +1,16 @@
+{% extends 'courses/base.html' %}
+
+{%block title %}Courses{% endblock %}
+
+{% block links %}
+
+{% endblock %}
+
+{% block body %}
+
+{% for p in posts %}
+<h5>{{p.FirstName }} {{p.LastName}}</h5>
+<p>{{p.AuthorEmail}}</p>
+{% endfor %}
+
+{% endblock %}

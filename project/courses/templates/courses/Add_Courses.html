@@ -1,0 +1,16 @@
+{% extends 'courses/base.html' %}
+
+{%block title %}Add courses{% endblock %}
+
+{% block links %}
+
+{% endblock %}
+
+{% block body %}
+
+<form action="{% url 'add_course' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Добавить курс">
+</form>
+{% endblock %}
